@@ -4,8 +4,6 @@ plugins {
     id 'checkstyle'
 }
 
-group = 'com.example'
-version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
@@ -18,14 +16,6 @@ dependencies {
 test {
     useJUnitPlatform()
     finalizedBy jacocoTestCoverageVerification
-}
-
-checkstyle {
-    toolVersion = '10.11.0'
-}
-
-jacoco {
-    toolVersion = "0.8.8"
 }
 
 jacocoTestCoverageVerification {
